@@ -40,3 +40,6 @@ venv/
 
 # temporary files
 *~
+
+*.db
+*.sql
