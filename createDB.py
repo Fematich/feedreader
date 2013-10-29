@@ -6,7 +6,7 @@
 import json,sqlite3
 
 def setupDB():
-    conn = sqlite3.connect('articles.db')
+    conn = sqlite3.connect(dbname)
     c = conn.cursor()
 
     # Create table
@@ -22,7 +22,7 @@ def setupDB():
     
 
 if __name__ == '__main__':
-    dbname='articles.db'
+    dbname='data/articles.db'
     settings=json.load(open('config.json','r'))
     settings['db_name']=dbname
     setupDB()

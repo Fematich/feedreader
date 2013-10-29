@@ -11,7 +11,7 @@ import sqlite3, logging
 from BeautifulSoup import BeautifulSoup
 
 logger = logging.getLogger('feedreader')
-logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.ERROR,filename='./feedexample.log',filemode='w')
+logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.ERROR,filename='./data/feedexample.log',filemode='w')
 
 def ExtractPost(content):
     page=BeautifulSoup(content)
